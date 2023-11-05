@@ -1,27 +1,42 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.solid:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.tools{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
-.card {
-  padding: 2em;
+.code-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
-.read-the-docs {
-  color: #888;
+.code-container> div {
+  width: 50%;
+}
+
+.code-container>.editor>textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.code-container>.editor{
+  margin-right: 0.5rem;
+}
+
+.code-container>.preview{
+  margin-left: 0.5rem;
+}
+
+.preview > pre[class*="language-"]{
+  margin: 0;
+  border-radius: 0;
 }

@@ -1,0 +1,21 @@
+.search-select button,
+.search-select .dropdown-menu {
+  min-width: 12rem;
+}
+
+.search-select button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-select .dropdown-menu {
+  padding: 0.5rem;
+}
+
+.search-select .dropdown-menu .list-group{
+  margin-top: 0.8rem;
+  max-height: 24rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
